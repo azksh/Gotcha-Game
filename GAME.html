@@ -1,0 +1,521 @@
+<html>
+<body  id="kamar" style='background-image: url("gbr.jpg");background-repeat:no-repeat;background-size:contain;background-color:#F7E4CC;'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet"  href="style.css" />
+	<script src="https://kit.fontawesome.com/9d53a2f771.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="startTime();">
+
+    <div id="test" style="background-color: aliceblue;"></div>
+    <div class="container">
+        <video autoplay muted loop id="myVideo" style=" z-index: -1;position:absolute; top: 0px; width:200%; left:0px" >
+            <source src="foto/siang.mp4" type="video/mp4" >
+        </video> 
+        <div class="row justify-content-center">
+            <div class="col text-center mt-4">
+                <img src="judul copy.gif" style="width:200px;" class="img-fluid" id="trophies">
+                <p><span style='color:white'>Mid Exam</p></span>
+                <hr id="midExamline">
+                    <div id="umnLife">
+                        <div>
+                            <p class="text-center" style="color:white; font-family: 'Major Mono Display', monospace;">Break Your Limit</p>
+                        </div>
+                    </div>
+                <div id="trophyBorder" class="row justify-content-center bg-light">
+                    <hr id="trophyBorder">
+                </div>
+            </div>
+        </div>
+        <footer>	
+			<h3><span style='color:white'>Made by Buzzlighter</h3></span>
+		</footer>
+       
+    <video autoplay muted loop id="myVideo" style=" z-index: -1;position:absolute; top: 0px; width:200%; left:0px" >
+        <source src="siang.mp4" type="video/mp4" >
+    </video>     
+    <div style="text-align:center;display: none;"><input type="button" id="playme"   value="Start" onclick="play_game()"></div> 
+        
+        <img id=malam src="malam.jpg" style="display:none">
+        <img id=taman src="taman.jpg" style="display:none">
+        <img id=kel_bangun src="kelinci.gif" style="display:none">
+        <img id=kel_tidur src="tidur.gif" style="display:none">
+        <img id=gb_1 src="kelinci.gif" style="display:none;width:100px">
+        <img id=gb_2 src="sincan.gif" style="display:none;width:100px">
+        <img id=gb_3 src="cewek.gif" style="display:none;width:100px">
+        <p id=umur align=center style="font-size:45; color:white;"></p>
+
+        <div style="background:#ffffff;padding:10px;border-radius: 10px 10px 10px 10px;width:300px;margin: auto;margin-top:30px;margin-bottom:30px">
+            <table align="center">
+                <tr><td style="width:100px;font-size:12px">Makan</td><td style="width:240px"><div id="BAR-MAKAN" style="width:0px;background:#0075FF;height:5px;border-radius: 5px 5px 5px 5px;"></div></td><tr>
+                <tr><td style="width:100px;font-size:12px">Main</td><td style="width:240px"><div id="BAR-MAIN" style="width:0px;background:#0075FF;height:5px;border-radius: 5px 5px 5px 5px;"></div></tr>
+                <tr><td style="width:100px;font-size:12px">Tidur</td><td style="width:240px"><div id="BAR-TIDUR" style="width:0px;background:#0075FF;height:5px;border-radius: 5px 5px 5px 5px;"></div></tr>
+            </table>
+        </div>
+
+<table align="center">
+    <tr style="display:none"><td style="text-align:center" colspan=3><div style='margin:auto;background-image: url("bgjam.png");background-repeat:no-repeat;background-size:contain;width:100px;height:100px'><img id=jarum  src="jarum.gif" style="width:100%;"></div></td></tr>
+    <tr>
+        <td></td>
+        <td id=JAM style='color: white;text-align:center;font-size:25px;width:500px'></td>
+        <td></td>
+    </tr>
+ </table>
+ <p align=center id="warning" style="color:#ffffff;padding:10px;font-size:25px"></p>
+
+<table align="center">
+    <tr>
+        <td>
+            <img id="gbr-1-1-0" src="babypigmakan.gif" style="display:none;width:500px;height:370px;">
+            <iframe id="gbr-1-1-1" src="s.html" style="display:none;width:500px;height:370px;border-style:none"></iframe>
+            <img id="gbr-1-1-2" src="babypigtidur.gif" style="display:knone;width:500px;height:370px;">
+            <img id="gbr-1-1-3" src="babilu.png" style="display:none;width:500px;height:370px;"> 
+           
+            <img id="gbr-1-2-0" src="pigremajamakan.gif" style="display:none;width:500px;height:370px;">
+            <iframe id="gbr-1-2-1" src="s.html" style="display:none;width:500px;height:370px;border-style:none"></iframe>
+            <img id="gbr-1-2-2" src="babiremajatidur.gif" style="display:none;width:500px;height:370px;">
+            <img id="gbr-1-2-3" src="babiremaja.png" style="display:none;width:500px;height:370px;"> 
+             
+            <img id="gbr-1-3-0" src="pigdewasamakan.gif" style="display:none;width:500px;height:370px;">
+            <iframe id="gbr-1-3-1" src="s.html" style="display:none;width:500px;height:370px;border-style:none"></iframe>
+            <img id="gbr-1-3-2" src="pigdewasatidur.gif" style="display:none;width:500px;height:370px;">
+            <img id="gbr-1-3-3" src="babidewasa.png" style="display:none;width:500px;height:370px;"> 
+           
+            <img id="gbr-2-1-0" src="babypinguinmakan.gif" style="display:none;width:500px;height:370px;">
+            <iframe id="gbr-2-1-1" src="s.html" style="display:none;width:500px;height:370px;border-style:none"></iframe>
+            <img id="gbr-2-1-2" src="babypinguintidur.gif" style="display:none;width:500px;height:370px;">
+            <img id="gbr-2-1-3" src="babypinguin.png" style="display:none;width:500px;height:370px;"> 
+            
+            <img id="gbr-2-2-0" src="pinguinremajamakan.gif" style="display:none;width:500px;height:370px;">
+            <iframe id="gbr-2-2-1" src="s.html" style="display:none;width:500px;height:370px;border-style:none"></iframe>
+            <img id="gbr-2-2-2" src="pinguinremajatidur.gif" style="display:none;width:500px;height:370px;">
+            <img id="gbr-2-2-3" src="pinguinremaja.png" style="display:none;width:500px;height:370px;"> 
+            <iframe id="gbr-1-1" src="s.html" style="display:none;width:500px;height:370px;border-style:none"></iframe>
+        
+            <img id="gbr-2-3-0" src="pinguindewasamakan.gif" style="display:none;width:500px;height:370px;">
+            <iframe id="gbr-2-3-1" src="s.html" style="display:none;width:500px;height:370px;border-style:none"></iframe>
+            <img id="gbr-2-3-2" src="pinguindewasatidur.gif" style="display:none;width:500px;height:370px;">
+            <img id="gbr-2-3-3" src="pinguindewasa.png" style="display:none;width:500px;height:370px;"> 
+            <iframe id="gbr-1-1" src="s.html" style="display:none;width:500px;height:370px;border-style:none"></iframe>
+        </td>
+
+        </tr>
+  </table>      
+
+ <table align="center">
+    <tr>
+        <td>
+            <div style="background:#ffffff;border-radius:20px 20px 20px 20px;padding: 5px 50px 5px 50px;">
+                <img src="lauk.jpg"  id='M0' style="visibility:hidden;width:20px;margin-right:10px" onclick='pilihanku(this.id)'><font id='0'style="cursor:pointer"  onclick='pilihanku(this.id)'>Makan</font>
+            </div>
+        </td>
+    <td style='width:500px;display:none;height:400px;text-align: center;' rowspan="2">
+       
+        <input id="prev" type="button" style="display: none;" value="<<" onclick="pilih_gambar(this.id)">
+        <img id=gb src="kelinci.gif" style="display:none;width:100px;height:100px;" onclick="pilih_gambar(this.id)">
+       
+        <input id="next" type="button" style="display: none;"" value=">>" onclick="pilih_gambar(this.id)">
+    </td>
+    <td>
+        <div style="background:#ffffff;border-radius:20px 20px 20px 20px;padding: 5px 50px 5px 50px;">
+            <img src="main.jpg"  id='M1' style="visibility:hidden;width:20px;margin-right:10px" onclick='pilihanku(this.id)'><font id='1' style="cursor:pointer" onclick='pilihanku(this.id)'>Main</font>
+        </div>
+    </td>
+</tr>
+    <tr>
+        <td>
+            <div style="background:#ffffff;border-radius:20px 20px 20px 20px;padding: 5px 50px 5px 50px;">
+                <img src="tidur.jpg"  id='M2' style="visibility:hidden;width:20px;margin-right:10px" onclick='pilihanku(this.id)'><font id='2' style="cursor:pointer" onclick='pilihanku(this.id)'>Tidur</font>
+            </div>
+        </td>
+            <td>
+                <div style="background:#ffffff;border-radius:20px 20px 20px 20px;padding: 5px 50px 5px 50px;">
+                 
+                    <img src="kesehatan.jpg"  id='M3' style="visibility:hidden;width:20px;margin-right:10px" onclick='pilihanku(this.id)'><font id='3' style="cursor:pointer" onclick='pilihanku(this.id)'>Obat</font>
+                </div>
+        </td>
+    </tr>
+
+</table>
+
+<style>
+@keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 100% 0;}
+}
+
+
+</style>
+
+<script>
+
+    let mytime;//r=setInterval(hitung_mundur, 50000);
+    var jam_sekarang=0;
+    var pilihan=0;
+  
+    var daftar_kegiatan=["MAKAN","MAIN","TIDUR","OBAT"];
+    var jam_kegiatan=[6,10,19,0];
+    var sisa_jam=[6,10,19,24];
+    var jadwal="";
+    var msg="";
+    var skore=0;
+    var avatar=1;
+    var level=1;
+    var level_hrs=0;
+ 
+
+    var cek_kesehatan="";
+
+    var delay=0;
+    var myTimecek = setInterval(delayku, 1000);
+    var pilih_gb=1;
+
+
+
+
+    function pilih_gambar(x)
+    {
+        if(x=="next")
+        {
+            pilih_gb= pilih_gb+1;
+            document.getElementById("prev").disabled=false;
+        }
+        if(x=="prev")
+        {
+            pilih_gb= pilih_gb-1;
+            document.getElementById("next").disabled=false;
+        }
+        if(pilih_gb>=3) 
+        {
+            pilih_gb=3;
+            document.getElementById("next").disabled=true;
+        }
+        if(pilih_gb<=1) 
+        {
+            pilih_gb=1;
+            document.getElementById("prev").disabled=true;
+        }
+        
+        document.getElementById("gb").src=document.getElementById("gb_"+pilih_gb).src;   
+       
+    }
+
+
+    mytimer=setInterval(hitung_mundur, 3000);
+    function play_game()
+    {
+        
+        if(jam_sekarang>0)
+        {
+            clearInterval(mytimer); 
+        }
+        jam_sekarang=0;
+        mytimer=setInterval(hitung_mundur, 3000);
+    }
+
+
+
+    function pilihanku(x)
+    {
+        level=1+Math.round(level_hrs/23);
+        if(level>3)
+        {
+            level=3;
+        }
+        
+        for(L=level;L>0;L--)
+        {
+            document.getElementById("gbr-"+avatar+"-"+L+"-0").style.display="none";
+            document.getElementById("gbr-"+avatar+"-"+L+"-1").style.display="none";
+            document.getElementById("gbr-"+avatar+"-"+L+"-2").style.display="none";
+            document.getElementById("gbr-"+avatar+"-"+L+"-3").style.display="none";
+        }
+            document.getElementById("gbr-"+avatar+"-"+level+"-"+x).style.display="";
+        if(daftar_kegiatan[x]==jadwal)
+        {
+            
+           //alert(x);
+           if(sisa_jam[x]<0)
+           {
+            skore=skore+1; 
+           }
+
+          // document.getElementById("gb").src= document.getElementById("GBR_"+x).src;
+               
+        }
+        else
+        {
+            if(x=="3")
+            {
+                document.getElementById(4).style.backgroundColor="#dddddd";
+                cek_kesehatan="";
+                if(msg!="")
+                {
+                    alert(msg);
+                    skore=skore+1;
+                }
+               
+                msg="";
+            }
+        }
+
+            if(jam_sekarang>jam_kegiatan[x])
+            {
+                sisa_jam[x]=24-jam_sekarang+jam_kegiatan[x];
+            }
+            else
+            {
+                sisa_jam[x]=jam_kegiatan[x]-jam_sekarang;
+            }
+           
+   
+        
+
+    }
+   
+    var kel=-10;
+
+    function hitung_mundur()
+     {
+        var pilihan_sekarang=0;
+        var rot=0;
+       
+        level_hrs=level_hrs+1;
+        jam_sekarang=jam_sekarang+1;
+        if(kel>=10)
+        {
+            kel=-10;
+        }
+        else
+        {
+            kel=10;
+        }
+        rot=(jam_sekarang*360/12);
+        rot=Number.parseInt(rot);
+        document.getElementById("jarum").style.transform = "rotate("+rot+"deg)";
+       
+        document.getElementById("JAM").innerHTML = jam_sekarang+":00";
+       
+        if(jam_sekarang>=24)
+        {
+            jam_sekarang=0;
+        }
+        
+  
+        if(jam_sekarang>=2 && jam_sekarang<4)
+        {
+            document.getElementById("warning").innerHTML="SAHUUUUUR";
+        }
+        if(jam_sekarang>=6 && jam_sekarang<10)
+        {
+            document.getElementById("warning").innerHTML="SELAMAT PAGI";
+        }
+        if(jam_sekarang>=11 && jam_sekarang<15)
+        {
+            document.getElementById("warning").innerHTML="SELAMAT SIANG";
+        }
+        if(jam_sekarang>=15 && jam_sekarang<18)
+        {
+            document.getElementById("warning").innerHTML="SELAMAT SORE";
+       }
+        if(jam_sekarang>=18 && jam_sekarang<24)
+        {
+            document.getElementById("warning").innerHTML="SELAMAT MALAM";
+            document.getElementById("warning").style.color="#ffffff";
+        }
+
+
+        if(jam_sekarang>=6 && jam_sekarang<18)
+        {
+            var url= document.getElementById("taman").src;
+            document.getElementById("kamar").style.backgroundImage = "url("+url+")";
+        }
+        else
+        {
+            var url= document.getElementById("malam").src;
+            document.getElementById("kamar").style.backgroundImage = "url("+url+")";
+        }
+
+        sisa_jam[0]=sisa_jam[0]-1;
+        sisa_jam[1]=sisa_jam[1]-1;
+        sisa_jam[2]=sisa_jam[2]-1;
+    
+     
+
+
+
+        
+      
+
+
+
+        if(jam_sekarang>=jam_kegiatan[0] && jam_sekarang<jam_kegiatan[1])
+        {
+            if(jadwal!="MAKAN")
+            {
+                //document.getElementById("0").style.backgroundColor="#ffff00";
+            }
+            jadwal="MAKAN";
+        }
+
+        
+
+        if(jam_sekarang>=jam_kegiatan[1] && jam_sekarang<jam_kegiatan[2])
+        {
+
+            if(jadwal!="MAIN")
+            {
+                //document.getElementById("1").style.backgroundColor="#ffff00";
+            }
+            jadwal="MAIN";
+        }
+
+
+
+
+        if((jam_sekarang>=jam_kegiatan[3] && jam_sekarang<=24))
+        {
+            if(jadwal!="TIDUR")
+            {
+                //document.getElementById("3").style.backgroundColor="#ffff00";
+            }
+            jadwal="TIDUR";
+        }
+        else
+        {
+            //document.getElementById("gb").style.transform = "rotate("+kel+"deg)";
+           // document.getElementById("gb").src= document.getElementById("gb_"+pilih_gb).src
+        }
+
+        
+
+     }
+
+     function delayku()
+     {
+
+       
+
+                if(sisa_jam[0]<-2)
+                {
+                    msg="Belum sarapan , sakit asam lambung";
+                }
+                if(sisa_jam[1]<-2)
+                {
+                    msg="Belum main , badan kurang gerak kena kolesterol";
+                    if(sisa_jam[0]<-2)
+                    {
+                        msg="Belum makan dan main , gak ada tenaga";
+                    }
+                }
+
+                if(sisa_jam[2]<-2)
+                {
+                    msg="Belum makan malam , asam lambung kambuh";
+                    if(sisa_jam[0]<-2)
+                    {
+                        msg="Belum sarapan dan makan malam , harus di rawat";
+                    }
+                }
+
+             
+
+             if(sisa_jam[0]>=0)
+            {
+                document.getElementById("BAR-MAKAN").style.width=4*(sisa_jam[0])+"px";
+            }
+            else
+            {
+                document.getElementById("BAR-MAKAN").style.width="0px";
+                //document.getElementById("0").style.backgroundColor="#ffff00";
+            }
+
+
+            if(sisa_jam[1]>=0)
+            {
+                document.getElementById("BAR-MAIN").style.width=4*(sisa_jam[1])+"px";
+            }
+            else
+            {
+                //document.getElementById("1").style.backgroundColor="#ffff00";
+            }
+
+
+            if(sisa_jam[2]>=0)
+            {
+                document.getElementById("BAR-TIDUR").style.width=4*(sisa_jam[2])+"px";
+            }
+            else
+            {
+                //document.getElementById("2").style.backgroundColor="#ffff00";
+            }
+
+
+
+        var idy=["0","1","2","3"];
+
+        for(d=0;d<3;d++)
+        {
+   
+            if(sisa_jam[d]<=0)
+            {
+                if(document.getElementById("M"+idy[d]).style.visibility=="hidden")
+                {
+                    document.getElementById("M"+idy[d]).style.visibility="";
+                }
+                else
+                {
+                    document.getElementById("M"+idy[d]).style.visibility="hidden";
+                }
+            }
+            else
+            {
+                document.getElementById("M"+idy[d]).style.visibility="";
+            }
+  
+        }
+           
+        if(msg!="")
+             {
+                //document.getElementById("3").style.backgroundColor="#ffff00";
+                if(document.getElementById("M3").style.visibility=="hidden")
+                {
+                    document.getElementById("M3").style.visibility="";
+                }
+                else
+                {
+                    document.getElementById("M3").style.visibility="hidden";
+                }
+                cek_kesehatan="yes";
+                skore=skore-1;
+             }
+             else
+             {
+                document.getElementById("M3").style.visibility="";
+             }
+
+            
+
+           if(skore<0)
+           {
+              clearInterval(mytimer);
+              document.getElementById("umur").innerHTML="Game OVer";
+              document.getElementById("umur").style.display="";
+           }
+           else
+           {
+               document.getElementById("umur").innerHTML=skore;
+           }
+     }
+
+     
+    </script>
+    <div id="hsl"></div>
+</body>
+</html>
